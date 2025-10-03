@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Owen - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #5b9bd5;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .cv-section {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 4px solid #f0f0f0;
+        }
+
+        .sidebar h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .sidebar h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .cv-content {
+            padding-left: 2rem;
+        }
+
+        .cv-content h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .cv-content h2 {
+            font-size: 1.4rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .cv-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .cv-item h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.2rem;
+        }
+
+        .cv-item .organization {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .cv-item .date {
+            font-style: italic;
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .cv-item .honor {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .cv-item a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        .cv-item a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .cv-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .cv-content {
+                padding-left: 0;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Caleb Owen</div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cv-section">
+            <aside class="sidebar">
+                <img src="My headshot.jpeg" alt="Caleb Owen" class="profile-img">
+                <h1>Caleb Owen</h1>
+                <h2>Graduate Research Assistant at<br>the University of Connecticut</h2>
+                <p>Data Analyst and PhD Student in Psychology, based in CT.</p>
+                
+                <div class="contact-info">
+                    <p>📧 calebowen1126@gmail.com</p>
+                    <p>📍 New Haven, CT</p>
+                    <p>💻 <a href="https://github.com/calebowen10/">Github</a></p>
+                </div>
+            </aside>
+
+            <div class="cv-content">
+                <h1>Curriculum Vitae</h1>
+
+                <h2>Positions</h2>
+                
+                <div class="cv-item">
+                    <h3>Graduate Research Assistant</h3>
+                    <div class="organization">University of Connecticut, Dyscord Lab</div>
+                    <div class="date">August 2025 - present</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>Data Fellow</h3>
+                    <div class="organization">Child Health & Development Institute</div>
+                    <div class="date">June 2024 - August 2025</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>Teaching Assistant</h3>
+                    <div class="organization">University of Connecticut, Department of Psychological Sciences</div>
+                    <div class="date">August 2025 - present</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>Behavioral Technician</h3>
+                    <div class="organization">ABLE Home Health Care</div>
+                    <div class="date">September 2023 - June 2024</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>Behavioral Technician</h3>
+                    <div class="organization">Connecticut Behavioral Health</div>
+                    <div class="date">May 2023 - May 2024</div>
+                </div>
+
+                <h2>Education</h2>
+                
+                <div class="cv-item">
+                    <h3>Ph.D., Experimental Psychology</h3>
+                    <div class="organization">University of Connecticut</div>
+                    <div class="date">In progress (started August 2025)</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>B.A., Psychological Sciences</h3>
+                    <div class="organization">University of Connecticut</div>
+                    <div class="date">May 2024</div>
+                </div>
+
+                <h2>Research Experience</h2>
+
+                <div class="cv-item">
+                    <h3>Graduate Research Assistant</h3>
+                    <div class="organization">University of Connecticut, Dyscord Lab</div>
+                    <div class="date">August 2025 - present</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>Undergraduate Research Assistant</h3>
+                    <div class="organization">University of Connecticut, LORE Lab</div>
+                    <div class="date">September 2023 - May 2024</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>Undergraduate Research Assistant</h3>
+                    <div class="organization">University of Connecticut, Condon Lab</div>
+                    <div class="date">September 2023 - May 2024</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>Undergraduate Research Assistant</h3>
+                    <div class="organization">University of Connecticut, EMPOWER Lab</div>
+                    <div class="date">September 2022 - December 2024</div>
+                </div>
+
+                <h2>Teaching Experience</h2>
+
+                <div class="cv-item">
+                    <h3>PSYC 1100 Lab Instructor</h3>
+                    <div class="organization">University of Connecticut</div>
+                    <div class="date">August 2025 - present</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>Mathematics Tutor</h3>
+                    <div class="organization">OpenLiteracy</div>
+                    <div class="date">September 2023 - May 2024</div>
+                </div>
+
+                <div class="cv-item">
+                    <h3>First Year Mentor</h3>
+                    <div class="organization">University of Connecticut, First Year Experience Program</div>
+                    <div class="date">August 2022 - December 2022</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
