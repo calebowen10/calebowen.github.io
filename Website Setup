@@ -195,7 +195,7 @@
     <main>
         <section id="about" class="about-section">
             <aside class="sidebar">
-                <img src="profile.jpg" alt="Caleb Owen" class="profile-img">
+                <img src="My headshot.jpeg" alt="Caleb Owen" class="profile-img">
                 <h1>Caleb Owen</h1>
                 <h2>Graduate Research Assistant at<br>the University of Connecticut</h2>
                 <p>Data Analyst and PhD Student in Psychology, based in CT.</p>
