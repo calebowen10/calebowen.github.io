@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Header/Navigation */
+        header {
+            background-color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #5b9bd5;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .about-section {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 4px solid #f0f0f0;
+        }
+
+        .sidebar h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .sidebar h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Area */
+        .content {
+            padding-left: 2rem;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .content a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .content {
+                padding-left: 0;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Caleb Owen</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#outreach">Outreach</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <aside class="sidebar">
+                <img src="profile.jpg" alt="Caleb Owen" class="profile-img">
+                <h1>Caleb Owen</h1>
+                <h2>Graduate Research Assistant at<br>the University of Connecticut</h2>
+                <p>Data Analyst and PhD Student in Psychology, based in CT.</p>
+                
+                <div class="contact-info">
+                    <p>📍 New Haven, CT</p>
+                    <p>💻 <a href="https://github.com/calebowen10/">Github</a></p>
+                </div>
+            </aside>
+
+            <div class="content">
+                <h2>About me</h2>
+                <p>
+                    Welcome! I'm Caleb Owen, a <span class="highlight">Graduate Research Assistant</span> at 
+                    <a href="https://psychology.uconn.edu/person/caleb-owen/">University of Connecticut</a>.
+                </p>
+                
+                <p>
+                    In 2025, I started my PhD in <a href="https://psychology.uconn.edu/phd/ecological-psychology/">Psychology</a> from UConn, 
+                    where I am a part of the <a href="https://dyscord-lab.github.io/">Dyscord Lab</a>, investigating 
+                    what drives students to succeed in different settings. I'm a former Fellow of the <a href="https://www.chdi.org/"> Child Health and Development Institute</a>.
+                </p>
+                
+                <p>
+  I focus on <em>motivation, learning, and social coordination</em>. I use <strong>data science</strong> and
+  <strong>statistics</strong> including: causal inference, A/B testing, multilevel modeling—alongside 
+  <strong>ML</strong> (predictive modeling, NLP) and <strong>engineering</strong>
+  to study student success and health equity. I prioritize <span class="highlight">open, reproducible</span> workflows
+  that translate analysis into real-world impact.
+</p>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
